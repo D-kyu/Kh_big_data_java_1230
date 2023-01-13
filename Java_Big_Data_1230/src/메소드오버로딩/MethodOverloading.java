@@ -4,29 +4,23 @@ package 메소드오버로딩;
 public class MethodOverloading {
     public static void main(String[] args) {
         System.out.println(sum(100, 200));
+        System.out.println(sum(100, 200, 300));
         System.out.println(sum(100, "200", 100));
+        System.out.println(sum(100, 200,300, 400));
         System.out.println(sum("seoul", "busan","incheon"));
-
-
-
     }
 
     static int sum(int x, int y){
         return x + y;
     }
-
-
     static int sum(int x, int y, int z){
+
         return x + y + z;
     }
-
-
-
     // 매개변수의 갯수가 달라서 오버로딩 가능
     static double sum(int x, int y, int z, int aa){
         return (double) (x + y + z);
     }
-
     // 매개변수의 타입이 달라서 오버로딩 가능
     static String sum(String x, String y, String z){
         return x + y + z;
@@ -35,5 +29,4 @@ public class MethodOverloading {
     static String sum(int x, String y, int z){
         return  x + y + z;
     }
-
 }
