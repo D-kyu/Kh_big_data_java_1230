@@ -1,6 +1,6 @@
 package 객체타입확인;
 
-import 상속실습예제.Person;
+//import 상속실습예제.Person;
 
 // instanceof : 객체 타입 확인 연산자, 부모와 자식 관계 성립 여부를 확인
 public class InstanceOf {

@@ -18,7 +18,6 @@ public class StarPrintEx {
                 System.out.print("*");
             }
             System.out.println();
-
         }
     }
 }

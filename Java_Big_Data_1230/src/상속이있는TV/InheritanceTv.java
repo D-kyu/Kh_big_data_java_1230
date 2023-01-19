@@ -5,8 +5,8 @@ public class InheritanceTv {
     public static void main(String[] args) {
         ProductTv LgTV = new ProductTv("우리집 TV");
         LgTV.setPower(true);
-        LgTV.setVolume(120);
-        LgTV.setChannel(1900, true);
+        LgTV.setVolume(12);
+        LgTV.setChannel(19, true);
         LgTV.viewTV();
     }
 }

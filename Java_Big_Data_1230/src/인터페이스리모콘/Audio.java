@@ -1,0 +1,36 @@
+package 인터페이스리모콘;
+
+public class Audio  implements RemoConControl{
+    private int volume;              // 접근제한자 인스턴스 필드
+
+
+    @Override
+    public void turnOn() {
+        System.out.println("Audio 를 켭니다.");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("Audio 를 끕니다.");
+
+    }
+
+    @Override
+    public void setVolume(int volume) {
+        if(volume > RemoConControl.MAX_VOLUME){
+            this.volume = RemoConControl.MAX_VOLUME;
+        } else if(volume < RemoConControl.MIN_VOLUME){
+            this.volume = RemoConControl.MIN_VOLUME;
+        }else {
+            this.volume = volume;
+        }
+        System.out.println("현재 Audio 볼륨 : " + this.volume);
+    }
+    public void getInfo(){
+        System.out.println("오디오 입니다. ");
+        System.out.println("현재 볼륨은 " + volume + "입니다.");
+    }
+
+}
+
+
